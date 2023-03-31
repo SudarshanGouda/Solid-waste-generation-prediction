@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solid Waste Management</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <!-- Intro -->
+
+        <div class="alert alert-dark" role="alert">
+            <h4 class="alert-heading text-center">Solid Waste Prediction</h4>
+            <p> This project helps to predict the Solid Waste Genarated.</p>
+            <div class="container text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVQ4kUgeTP93n27x214PH0sfM6EjV7JE6PFH6U_OQ2VYLHEW-_VtfxdtLID3D6I83cw0&usqp=CAU">
+
+            </div>
+
+            <hr>
+            <p class="mb-0">Can find the project in GitHub. Here is the link for the <a href="https://github.com/">GitHub</a>.The goal of this project is to analyze the
+                factors that can effect the Genaration of Solid waste, and also creating a model which will predict the Waste Genaration.</p>
+        </div>
+      <!-- Form -->
+        <h3 class='text-center'>Please fill the details</h3>
+        <div class="container my-4">
+            <form action="/" method="POST">
+
+
+                <!-- TypeofResidence -->
+                <div class="form-group" >
+                    <label for="TypeofResidence">Select Type of Residence</label>
+                    <select class="form-control" id="TypeofResidence" name="TypeofResidence">
+                            <option value="Type of Residence_Apartment">Appartment</option>
+                            <option value="Type of Residence_Gated Community">Gated Community</option>
+                            <option value="Type of Residence_Independent house">Independent house</option>
+                            <option value="Type of Residence_Small Community(2-3 Story)">Small Community(2-3 Story)</option>
+                        </select>
+                </div>
+
+                                <!-- Numberofpeople -->
+                <div class="form-group" >
+                    <label for="Numberofpeople">Select Numberofpeople</label>
+                    <select class="form-control" id="Numberofpeople" name="Numberofpeople">
+                            <option value="1">2-3 Members</option>
+                            <option value="2">4-5 Members</option>
+                            <option value="3">More than 5</option>
+                            <option value="0">Single</option>
+                        </select>
+                </div>
+
+                                <!-- AnnualIncome -->
+                <div class="form-group" >
+                    <label for="AnnualIncome">Select Income Range</label>
+                    <select class="form-control" id="AnnualIncome" name="AnnualIncome">
+                            <option value="0">Less than 5 lakh per annum</option>
+                            <option value="1">5-7 lakh per annum</option>
+                            <option value="2">7-10 lakh per annum</option>
+                            <option value="3">More than 10 lakh per annum</option>
+                        </select>
+                </div>
+
+                                <!-- FrequencyofDisposal -->
+                <div class="form-group" >
+                    <label for="FrequencyofDisposal">Select Frequency of Disposal</label>
+                    <select class="form-control" id="FrequencyofDisposal" name="FrequencyofDisposal">
+                            <option value="Frequency of Disposal_Alternate day">Alternate day</option>
+                            <option value="Frequency of Disposal_Daily">Disposal Daily</option>
+                            <option value="Frequency of Disposal_Once in a week">Once in a week</option>
+                            <option value="Frequency of Disposal_Twice a Week">Twice a Week</option>
+                        </select>
+                </div>
+
+                                <!-- ModeofDisposal -->
+                <div class="form-group" >
+                    <label for="ModeofDisposal">Select Mode of Disposal</label>
+                    <select class="form-control" id="ModeofDisposal" name="ModeofDisposal">
+                            <option value="Mode of Disposal_Door to door collection">Door to door collection</option>
+                            <option value="Mode of Disposal_Mobile Collection Vehicle">Mobile Collection Vehicle</option>
+                            <option value="Mode of Disposal_Nearby dump yard">Nearby dump yard</option>
+                            <option value="Mode of Disposal_Open area dumping">Open area dumping</option>
+                        </select>
+                </div>
+
+                                <!-- NumberofBinsintheVicinity -->
+                <div class="form-group" >
+                    <label for="NumberofBinsintheVicinity">Select Number of Bins in the Vicinity</label>
+                    <select class="form-control" id="NumberofBinsintheVicinity" name="NumberofBinsintheVicinity">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">More than 2</option>
+                        </select>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+  </body>
